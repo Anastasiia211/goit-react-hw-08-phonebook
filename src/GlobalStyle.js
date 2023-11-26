@@ -71,11 +71,57 @@ body {
   padding: 8px 15px;
   border-radius: 5px;
 }
-.numberCard{
-max-width: 50%;
+.card {
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
+
+.container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+   h1{
+       text-align: center;
+       position: relative;
+       margin: 0 -30px 30px -30px;
+       padding: 10px 0;
+       color:#4682B4;
+       text-shadow: 0 1px rgba(0,0,0,.8);
+       background: #5c5c5c;
+       background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+       box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+       -moz-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+       -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+       box-shadow: 0 2px 0 rgba(0,0,0,.3);
+   }
+ 
+   h1:before, h1:after
+   {
+       content: '';
+       position: absolute;
+       border-style: solid;
+       border-color: transparent;
+       bottom: -10px;
+   }
+ 
+   h1:before
+   {
+       border-width: 0 10px 10px 0;
+       border-right-color: #222;
+       left: 0;
+   }
+ 
+   h1:after
+   {
+       border-width: 0 0 10px 10px;
+       border-left-color: #222;
+       right: 0;
+   }
+
+
 
 
 `;
